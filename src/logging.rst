@@ -6,7 +6,7 @@
 Logging
 =======
 
-PHPUnit can produce several types of logfiles.
+PHPUnit can produce several types of logfiles. These can be enabled either using the ``<logging>`` element within the PHPUnit configuration file, or by command line options.
 
 .. _logging.xml:
 
@@ -15,8 +15,9 @@ Test Results (XML)
 
 The XML logfile for test results produced by PHPUnit is based upon the one
 used by the `JUnit
-task for Apache Ant <http://ant.apache.org/manual/Tasks/junit.html>`_. The following example shows the XML
-logfile generated for the tests in ``ArrayTest``:
+task for Apache Ant <http://ant.apache.org/manual/Tasks/junit.html>`_. This can be enabled using ``--log-junit <file>`` on the command line, or ``<log type="junit" target="<file>"/>`` within the ``<logging>`` element in the configuration file.
+
+The following example shows the XML logfile generated for the tests in ``ArrayTest``:
 
 .. code-block:: bash
 
